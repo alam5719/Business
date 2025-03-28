@@ -1,0 +1,86 @@
+
+
+
+.f-container{
+  max-width: 800px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5sease-in-out;
+  margin-left: 300px;
+}
+
+
+
+
+review-container {
+
+  margin: 30px auto;
+  margin-right: 320px;
+  margin-left: 320px;
+  height: 88vh;
+}
+
+
+
+page-title {
+  font-size: 28px;
+  margin-left: -167px;
+}
+
+
+.h3{
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+
+
+
+
+
+.submit-btn2{
+  
+  /* background: #007bff;
+  color: white;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 18%;
+  display: flex
+;
+  margin-left: 132px;
+  margin-top: -48px;
+  height: 49px;
+  justify-content: center; */
+
+  
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 16%;
+  margin-left: 129px;
+  justify-content: center;
+  display: flex;
+  background: #007bff;
+  color: white;
+  height: 48px;
+  justify-content: center;
+  padding: 12px;
+  margin-top: -48px;
+  font-weight: bold;
+
+
+}
+
+
+
+.submit-btn2:hover {
+  background: blue;
+  transition: background 0.3s ease;
+
+}

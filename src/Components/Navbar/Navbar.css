@@ -1,0 +1,365 @@
+/*   
+
+
+
+
+
+   body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: url('../../assets/bg2.jpg');
+    background-size: cover;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.o {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 15px;
+    background-color: rgba(128, 128, 128, 0.176);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    height: 62px;
+    width: 88px;
+    margin-left: 5px;
+    cursor: pointer;
+    margin-left: 7px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.navbar-profile-pic {
+    width: 58px;
+    height: 54px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 24px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 35px;
+}
+
+.nav-item {
+    padding: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.041);
+}
+
+.dropdown {
+    justify-content: space-between;
+    margin-right: 5px;
+    background-color: transparent;
+}
+
+.dropdown-toggle {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.dropdown-toggle:hover {
+    color: skyblue !important;
+    background-color: transparent;
+}
+
+.image-slideshow {
+    display: flex;
+    margin-top: 230px;
+    justify-content: space-evenly;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.678);
+}
+
+.dropdown .dropdown-toggle {
+    color: white;
+    border: none;
+}
+
+.sp-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+    color: white;
+}
+
+.nav-item-post-business-btn {
+    color: aliceblue;
+    background-color: #0fc939;
+    border: none;
+    padding: 10px 10px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    display: flex;
+    height: 43px;
+    margin-top: 7px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-left: 56px;
+}
+
+.logout-btn {
+    background-color: #ff2b62;
+    display: flex;
+    color: white;
+    border: none;
+    margin-left: 8px;
+    padding: 4px;
+    margin-top: 7px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logout-btn:hover,
+.nav-item-post-business-btn:hover {
+    opacity: 0.8;
+}
+
+
+.bids-btn{
+    
+    display: flex;
+    border: none;
+    background-color: #0fc939;
+    color: white;
+    margin-left: 13px;
+    width: 57px;
+    height: 43px;
+    margin-top: 6px;
+    justify-content: center;
+    padding: 11px;
+    font-weight: bold;
+    border-radius: 6px;
+ 
+}
+
+
+.bids-btn:hover{
+    opacity: 0.8;
+}
+
+
+    */
+
+
+
+
+
+    /* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center; /* Align items vertically */
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Keep navbar on top */
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Left side: Logo & Buttons */
+  .nav-left {
+    display: flex;
+    /* align-items: center; */
+    gap: 20px; 
+  }
+  
+  /* Logo Styling */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    height: 50px; /* Fixed size for logo */
+    width: auto; /* Keep aspect ratio */
+  }
+  
+  /* Buttons Styling */
+  .nav-item-post-business-btn,
+  .bids-btn {
+    padding: 8px 16px;
+    font-size: 16px;
+    color: white;
+    background-color: #0fc939;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .nav-item-post-business-btn:hover,
+  .bids-btn:hover {
+    background-color: #0ca02d;
+  }
+  
+  /* Right side: Profile & Links */
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between items */
+  }
+  
+  /* Login & Signup Links */
+  .nav-item {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Logout Button */
+  .logout-btn {
+    padding: 8px 16px;
+    font-size: 16px;
+    color: white;
+    background-color: #f44336;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Profile Image Styling */
+  .profile-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fits the circle */
+    cursor: pointer;
+  }
+  
+  /* ✅ Responsive Design */
+  
+  /* For Tablets & Small Laptops */
+  @media (max-width: 1024px) {
+    .navbar {
+      padding: 10px;
+    }
+  
+    .navbar-logo {
+      height: 40px; /* Slightly smaller logo */
+    }
+  
+    .nav-item-post-business-btn,
+    .bids-btn,
+    .logout-btn {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  }
+  
+  /* For Mobile Devices */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-wrap: wrap; /* Allow items to wrap if necessary */
+    }
+  
+    .nav-left,
+    .nav-right {
+      gap: 10px; /* Reduce gaps for smaller screens */
+    }
+  
+    .navbar-logo {
+      height: 35px; /* Smaller logo */
+    }
+  
+    .nav-item-post-business-btn,
+    .bids-btn,
+    .logout-btn {
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+  
+    .navbar-profile-pic {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  
+  /* For Very Small Screens */
+  @media (max-width: 480px) {
+    .navbar {
+      flex-direction: column; /* Stack items on very small screens */
+    }
+  
+    .nav-left,
+    .nav-right {
+      width: 100%;
+      /* justify-content: space-between; */
+    }
+  
+    .navbar-logo {
+      height: 30px;
+    }
+  
+    .nav-item-post-business-btn,
+    .bids-btn,
+    .logout-btn {
+      font-size: 10px;
+      padding: 4px 8px;
+    }
+  
+    .navbar-profile-pic {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  

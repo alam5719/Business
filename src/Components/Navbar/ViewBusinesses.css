@@ -1,0 +1,172 @@
+/* .container{
+    padding: 23px;
+}
+
+
+
+.b-desc{
+    color: black;
+}
+
+
+.desc{
+
+
+}
+
+
+
+
+.bt{
+    display: flex;
+    width: 12%;
+    height: 36px;
+    justify-content: center;
+    padding: 4px;
+    border: transparent;
+    background: blue;
+    color: white;
+    margin-left: 0px;
+    margin-top: -11px;
+}
+
+.grid{
+
+}
+
+
+.font{
+
+}
+
+.b-name{
+    color: black;
+}
+
+
+.border{
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.BMan-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background:transparent;
+    min-height: 100vh;
+  }
+  
+  .t1-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .business-info {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .business-card {
+    background-color: #fafafa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+  }
+  
+  .business-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .business-desc {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .no-data {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  /* .next-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .next-btn:hover {
+    background-color: #45a049;
+  } */
+  
+
+
+
+
+
+
+
+
+
+
+  .next-btn2 {
+    background-color: #0d6efd; 
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .next-btn2:hover {
+    background-color:  #2f64b3;  
+  }
+  
+
+
+
+
+
+

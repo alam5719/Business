@@ -1,0 +1,273 @@
+/* 
+
+
+
+
+
+
+ 
+.BMan-container {
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ min-height: 100vh;
+ padding: 20px; 
+ background:transparent;
+
+} 
+
+
+
+.t-container {
+
+
+ background: url('../../assets/image1.jpg');
+
+ padding: 20px;
+ border-radius: 10px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ text-align: center;
+ width: 80%;
+ max-width: 600px;
+
+
+
+
+}
+
+.head1 {
+ font-size: 24px;
+ color: #333;
+}
+
+.head2 {
+ font-size: 18px;
+ color: #666;
+}
+
+.business-info {
+ margin-top: 20px;
+ text-align: left;
+}
+
+.business-info h2, .business-info h3 {
+ color: #222;
+ margin-bottom: 10px;
+}
+
+.business-info p {
+ font-size: 16px;
+ color: #444;
+ margin: 5px 0;
+}
+
+.business-info a {
+ color: #007bff;
+ text-decoration: none;
+}
+
+.business-info a:hover {
+ text-decoration: underline;
+}
+
+
+
+.business-info{
+ display:flex;
+}
+
+
+
+
+
+.business-info {
+ display: flex;
+ flex-direction: column;
+}
+
+.business-info h2, .business-info h3 {
+ text-align: center;
+ margin-bottom: 15px;
+}
+
+.business-info label {
+ font-weight: bold;
+ margin-top: 10px;
+}
+
+.business-info textarea {
+ width: 100%;
+ height: 40px;
+ padding: 10px;
+ margin-top: 5px;
+ margin-bottom: 10px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ resize: none;
+ font-size: 16px;
+}
+
+.next-btn {
+ display: block;
+ width: 100%;
+ background: #007bff;
+ color: white;
+ padding: 10px;
+ font-size: 18px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ margin-top: 15px;
+}
+
+.next-btn:hover {
+ background: #0056b3;
+} */
+
+
+
+
+
+
+
+
+
+
+
+.BMan-container {
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ min-height: 100vh;
+ padding: 20px; 
+ background:transparent;
+
+} 
+
+
+
+
+
+.t1-container {
+  max-width: 800px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5sease-in-out;
+
+}
+
+
+
+
+
+.textarea {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  resize: none; /* Disables resizing */
+  overflow: hidden; /* Hides scrollbar */
+  white-space: nowrap; /* Prevents wrapping */
+  resize: none;  
+  overflow: hidden;  
+  white-space: nowrap;  
+}
+ 
+
+/* Scrollable Right Side Only for Description */
+.textarea[name="description"] {
+  height: 120px;
+  overflow-y: auto; /* Enables vertical scrolling */
+  resize: vertical; /* Allows vertical resizing */
+  direction: rtl; /* Moves the scrollbar to the right side */
+  text-align: left; /* Keeps text aligned to the left */
+  overflow-y: auto;  
+  resize: vertical;  
+  direction: rtl; 
+  text-align: left; 
+}
+
+/* File Upload */
+
+  
+
+/* Submit Button */
+.next-btn {
+  background: #007bff;
+  /* background: #007bff;
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+
+@@ -326,7 +337,23 @@ input[type="file"] {
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+  transition: background 0.3s ease; */
+
+  
+   
+ 
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3sease;
+  width: 22%;
+  margin-left: 126px;
+  display: flex
+;
+  justify-content: center;
+  margin-top: -48px;
+  display: flex
+;
+  margin-left: 130px;
+
+}
+
+.next-btn:hover {
+  background: blue;
+  transition: background 0.3s ease;
+
+}
+
+
+.back-btn{
+  
+  background: red;
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 2px;
+  transition: background 0.3sease;
+  width: 14%;
+  margin-left: 14px;
+  display: flex;
+  justify-content: center;
+  margin-top: 7px;
+  font-weight: bold;
+}
+
+
+.back-btn:hover {
+  /* background: red; */
+  background: #cc0000; 
+  transition: background 0.3s ease;
+}
+
+
+
+.back-btn:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}

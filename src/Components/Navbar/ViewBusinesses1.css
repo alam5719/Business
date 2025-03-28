@@ -1,0 +1,167 @@
+/* .container{
+    color:white;
+
+}
+
+
+
+
+.inerest-btn{
+    color: aliceblue;
+    background-color: deeppink;
+    border: none;
+    padding: 10px 10px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    display: flex;
+    height: 37px;
+    margin-top: 7px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    margin-left: 168px;
+    margin-top: -37px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.BMan-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .t1-container {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .business-info {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .business-name {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .business-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .detail-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 16px;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .value {
+    font-weight: normal;
+  }
+  
+  .website-link,
+  .file-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .website-link:hover,
+  .file-link:hover {
+    text-decoration: underline;
+  }
+  
+  .btn-group {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .back-btn{
+    background: red;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2px;
+    transition: background 0.3sease;
+    width: 14%;
+    margin-left: 14px;
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+    font-weight: bold;
+
+  }
+  
+  .intrest-btn {
+    background-color: #d87d0f;
+    color: #fff;
+    transition: background-color 0.3sease;
+    padding: 11px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    justify-content: center;
+    margin-left: 127px;
+    display: flex;
+    margin-top: -47px;
+    height: 47px;
+  }
+  
+  .intrest-btn:hover {
+    background-color: #b07022;
+    /* color: #fff; */
+  }
+  
+
+
+
+
+
+
+
+
+  .next-btn2 {
+    background-color: #0d6efd; 
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .next-btn2:hover {
+    background-color:  #2f64b3;  
+  }

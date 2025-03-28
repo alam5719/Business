@@ -1,0 +1,167 @@
+1. Businessmen (Users)
+This collection will store details of businessmen who want to raise investment.
+
+{
+  "_id": ObjectId(),
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "phone_number": "+123456789",
+  "password": "hashedpassword",
+  "profile_picture": "path/to/picture.jpg",
+  "business_type": "Tech Startup",
+  "location": "New York, USA",
+  "business_details": {
+    "company_name": "Tech Innovators",
+    "year_founded": 2020,
+    "website": "http://techinnovators.com",
+    "sector": "Technology",
+    "stage_of_business": "Early Stage",
+    "description": "A startup focusing on AI and machine learning.",
+    "target_market": "Tech Enthusiasts, Enterprises",
+    "total_funding_required": 5000000,  // Total funding needed
+    "equity_offered": 10, // Percentage of equity offered to investors
+    "business_plan": "path/to/business_plan.pdf"
+  },
+  "investment_proposals": [
+    {
+      "investment_required": 5000000,
+      "equity_offered": 10,
+      "status": "active", // can be 'active', 'closed', etc.
+      "created_at": ISODate("2025-01-01T12:00:00Z")
+    }
+  ],
+  "current_investments": [
+    {
+      "investment_id": ObjectId(),
+      "investor_id": ObjectId(),
+      "amount": 2000000,
+      "equity_received": 5, // Percentage of equity given to investor
+      "status": "active",
+      "created_at": ISODate("2025-02-01T12:00:00Z")
+    }
+  ],
+  "created_at": ISODate("2025-01-01T12:00:00Z"),
+  "updated_at": ISODate("2025-02-01T12:00:00Z")
+}
+
+
+2. Investors (Users)
+This collection will store details of investors who are interested in funding businesses.
+
+json
+Copy
+{
+  "_id": ObjectId(),
+  "name": "Jane Smith",
+  "email": "jane.smith@example.com",
+  "phone_number": "+987654321",
+  "password": "hashedpassword",
+  "profile_picture": "path/to/picture.jpg",
+  "location": "Los Angeles, USA",
+  "investment_preferences": {
+    "investment_range_min": 100000, // Minimum investment amount
+    "investment_range_max": 10000000, // Maximum investment amount
+    "preferred_sectors": ["Technology", "Healthcare"],
+    "preferred_stage": "Early Stage",
+    "preferred_region": "USA"
+  },
+  "investments": [
+    {
+      "business_id": ObjectId(),
+      "investment_amount": 2000000,
+      "equity_received": 5, // Percentage of equity received
+      "status": "active", // can be 'active', 'completed', etc.
+      "created_at": ISODate("2025-02-01T12:00:00Z")
+    }
+  ],
+  "created_at": ISODate("2025-01-01T12:00:00Z"),
+  "updated_at": ISODate("2025-02-01T12:00:00Z")
+}
+
+3. Bids (Investment Offers)
+This collection will store the details of each investment offer made by businessmen, and the bids that investors place.
+
+json
+Copy
+{
+  "_id": ObjectId(),
+  "businessman_id": ObjectId(), // Reference to the businessman
+  "investor_id": ObjectId(),    // Reference to the investor who placed the bid
+  "amount": 1000000, // Amount offered by the investor
+  "equity_offered": 5, // Equity percentage offered to investor
+  "status": "active", // can be 'active', 'accepted', 'rejected', etc.
+  "created_at": ISODate("2025-02-01T12:00:00Z"),
+  "updated_at": ISODate("2025-02-01T12:00:00Z")
+}
+4. Commission
+This collection will store information about commissions associated with business transactions, including any platform fees or agreed-upon commissions.
+
+json
+Copy
+{
+  "_id": ObjectId(),
+  "investment_id": ObjectId(),  // Reference to the investment
+  "businessman_id": ObjectId(), // Reference to the businessman
+  "investor_id": ObjectId(),    // Reference to the investor
+  "commission_percentage": 2,  // Commission percentage for the platform
+  "commission_amount": 40000, // Commission amount (calculated as percentage of investment)
+  "status": "paid",  // can be 'pending', 'paid', etc.
+  "created_at": ISODate("2025-02-01T12:00:00Z"),
+  "updated_at": ISODate("2025-02-01T12:00:00Z")
+}
+5. Business Transactions (Payments)
+This collection will store all financial transactions related to investments.
+
+json
+Copy
+{
+  "_id": ObjectId(),
+  "businessman_id": ObjectId(), // Reference to the businessman
+  "investor_id": ObjectId(),    // Reference to the investor
+  "investment_id": ObjectId(),  // Reference to the investment
+  "transaction_type": "investment", // 'investment', 'refund', etc.
+  "amount": 2000000, // Amount of the transaction
+  "status": "completed", // 'pending', 'completed', 'failed', etc.
+  "payment_method": "bank_transfer", // 'bank_transfer', 'paypal', etc.
+  "transaction_date": ISODate("2025-02-01T12:00:00Z"),
+  "commission_details": {
+    "commission_percentage": 2,
+    "commission_amount": 40000
+  }
+}
+6. Notifications
+This collection stores notification details for both businessmen and investors.
+
+json
+Copy
+{
+  "_id": ObjectId(),
+  "user_id": ObjectId(), // Reference to the user (either businessman or investor)
+  "message": "Your investment proposal has been accepted by an investor.",
+  "type": "investment_status", // Can be 'investment_status', 'business_update', etc.
+  "status": "unread", // can be 'read', 'unread'
+  "created_at": ISODate("2025-02-01T12:00:00Z"),
+  "updated_at": ISODate("2025-02-01T12:00:00Z")
+}
+7. Ratings and Reviews
+This collection will store ratings and reviews given by investors and businessmen to each other after a transaction.
+
+json
+Copy
+{
+  "_id": ObjectId(),
+  "businessman_id": ObjectId(), // Reference to the businessman
+  "investor_id": ObjectId(),    // Reference to the investor
+  "rating": 4, // Rating out of 5
+  "review": "Great experience, smooth investment process.",
+  "created_at": ISODate("2025-02-01T12:00:00Z"),
+  "updated_at": ISODate("2025-02-01T12:00:00Z")
+}
+Database Relationships
+Businessmen have investment proposals, current investments, and ratings.
+Investors place bids on investment proposals, and have investments.
+Bids link investors to businessmen.
+Commissions track fees on completed investments.
+Business Transactions store the details of money exchanged.
+Notifications notify users about changes or actions on their proposals and investments.
+This design covers all the necessary entities for a businessman-investor platform, capturing business and investment details, bid transactions, commission, payments, and feedback loops.

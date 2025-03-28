@@ -1,0 +1,23 @@
+.pay-button{
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 18%;
+    margin-left: 3px;
+    justify-content: center;
+    display: flex;
+    background: #007bff;
+    color: white;
+    height: 48px;
+    justify-content: center;
+    padding: 12px;
+    margin-top: -5px;
+    font-weight: bold;
+}
+
+
+.pay-button  :hover{
+    background: blue;
+    transition: background 0.3s ease;
+}
